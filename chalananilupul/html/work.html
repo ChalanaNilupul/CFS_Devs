@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <link rel="icon" type="image/x-icon" href="../Images/webicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/work.css">
+    <script src="../js/toggle - New.js"></script>
+    <script src="../js/loaderWork.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div class="navbarh" id="nav">
+        <div class="center">
+            <ul>
+                <li id="link"> <a href="./about.html" id="aboutl">About</a></li>
+                <li id="link"> <a href="./work.html" id="workl">Work</a> </li>
+                <li id="link"><a href="../index.html" id="contactl">Home</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sign" id="sign"><a href="../index.html"><img src="../Images/logofinal.svg" alt="" width="30px"> </div></a>
+
+    <div class="bars" id="bars" onclick="menu()">
+        <!--- <i class="fa fa-bars" id="open" onclick="menu()"></i>-->
+
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+
+
+    </div>
+
+
+
+
+    <div class="C-back">
+        <h1 class="head">WORK</h1>
+    </div>
+
+    <div class="Work" id="work">
+        
+        <div class="projects">
+            <div class="title">
+                <h1>Projects.</h1>
+            </div>
+            <div class="proin">
+
+                
+
+                <div class="card" id="cgraphy">
+                    <img src="../Images/graphylogo.png" alt="" >
+                    <div class="project">
+                        
+                        <div class="details">
+                            <div class="center">
+                                <h1>C Graphy</h1>
+                                <p>This project is build for photographers for sell their content through
+                                    this website. Users can like, comment and buy items also users can
+                                    hire the photographer
+                                </p>
+                                
+                                <a href="#"
+                                    target="new"> <button>Visit</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card" id="gvo">
+                    <img src="../Images/gvologo.png" alt="" >
+                    <div class="project">
+                      
+                        <div class="details">
+                            <div class="center">
+                                <h1>GVO</h1>
+                                <p>Simple music website 
+                                </p>
+                                
+                                <a href="https://heartfelt-swan-805a3e.netlify.app/"
+                                    target="new"> <button>Visit</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="projects" id="designs">
+            <div class="title">
+                <h1>Designs.</h1>
+            </div>
+            <div class="proin">
+
+                <div class="card" id="katana">
+                     <!-- <img src="../Images/lklogo.png" alt="" > -->
+                    <div class="project">
+                       
+                        <div class="details">
+                            <div class="center">
+                                <h1>Sword Shop</h1>
+                                <p>UI design of a swords shop landing page
+                                </p>
+                                
+                                <a href="https://www.behance.net/gallery/154163069/UI-design-for-a-swords-shop?tracking_source=project_owner_other_projects"
+                                    target="new"> <button>Visit</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="shop">
+                     <!-- <img src="../Images/lklogo.png" alt="" > -->
+                    <div class="project">
+                       
+                        <div class="details">
+                            <div class="center">
+                                <h1>Store</h1>
+                                <p>UI design of a clothing shop
+                                </p>
+                                
+                                <a href="https://www.behance.net/gallery/154163441/UI-Design-for-a-shop?tracking_source=project_owner_other_projects"
+                                    target="new"> <button>Visit</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            
+
+
+
+
+
+       
+
+    </div>
+
+    <!-- <button id="up" onclick=" scrollToTop()"><i class="fa fa-arrow-up"></i></button> -->
+
+    <!------------------------------------------------MOUSE POINTER------------------------------------------------------------------------>
+    <div class="mousePointer" id="mousePointer"></div>
+
+    <script type="text/javascript">
+        var cursor = document.getElementById('mousePointer');
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursor.style.left = x + "px";
+            cursor.style.top = y + "px";
+        });
+
+    </script>
+
+    <!------------------------------------------------MOUSE POINTER-------------------------------------------------------------------------->
+
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+
+
+</body>
+
+</html>

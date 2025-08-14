@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Gruppo&family=Lato&family=Orbitron&family=Righteous&family=Roboto&family=Saira+Stencil+One&family=Titan+One&display=swap');
+@import url('http://fonts.cdnfonts.com/css/franklin-gothic');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+
+}
+
+body {
+    background-color: #1E1E1E;
+}
+
+/*----------------------------------------------------------------Active part-----------------------------------------------------------------------------*/
+.navbarh.active {
+    left: 0;
+
+}
+
+.mousePointer.active {
+    border: 1.5px dashed white;
+}
+
+#bars.active .line1 {
+    transform: translateX(70px);
+    background-color: transparent;
+}
+
+#bars.active .line2 {
+    transform: rotate(-45deg);
+    background-color: rgb(255, 255, 255);
+}
+
+#bars.active .line3 {
+    transform: rotate(45deg);
+    background-color: rgb(255, 255, 255);
+}
+
+/*----------------------------------------------------------------Active part-----------------------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------------------3 Menu bars-------------------------------------------------------------------------------------------*/
+#bars {
+
+    display: none;
+    font-size: 30px;
+    right: 30px;
+    top: 30px;
+    width: 30px;
+    height: 26px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 2;
+    animation: bars 1s;
+
+
+}
+
+@keyframes bars {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+
+#bars .line1,
+.line2,
+.line3 {
+    margin-top: 10px;
+    position: fixed;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: .5s ease-in-out;
+    border-radius: 5px;
+}
+
+#bars .line2 {
+    transform: translateY(-10px);
+}
+
+#bars .line3 {
+    transform: translateY(10px);
+}
+
+
+
+
+
+.navbarh ul {
+
+    margin-top: 0;
+
+}
+
+.navbarh ul li {
+    list-style: none;
+    text-align: left;
+    width: 30vw;
+}
+
+.navbarh ul li a {
+    transition: .5s;
+    color: black;
+    text-decoration: none;
+}
+
+#link {
+    font-size: 9vw;
+
+}
+
+#link a {
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous', cursive;
+}
+
+#link:hover a {
+
+    color: #FFD21D;
+    padding: 0 20px;
+}
+
+.navbarh {
+
+    position: fixed;
+    transition: .5s;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background-color: #1E1E1E;
+    /*animation: nav .9s;*/
+}
+
+.navbarh .center {
+
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.sign {
+    position: absolute;
+    top: 20px;
+    display: none;
+    left: 30px;
+    animation: sign 1s;
+}
+
+@keyframes sign {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+
+/*--------------------------------------------------------WORK-----------------------------------------------------*/
+
+
+
+
+
+.C-back h1 {
+    font-family: 'Righteous', cursive;
+    letter-spacing: .1em;
+    font-size: 15vw;
+    color: #FFD21D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .5s;
+    transform: translate(-50%, -50%);
+    animation: h1 2s ease-in-out;
+
+
+}
+
+@keyframes h1 {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+.Work {
+    display: none;
+    animation: work 1s ease-in-out;
+    margin-top: 15vh;
+
+}
+
+@keyframes work {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+
+
+.projects {
+
+    width: 100%;
+}
+
+
+.projects .title h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 30px;
+    font-size: 5vw;
+    text-align: center;
+    pointer-events: none;
+    
+}
+
+.projects .proin {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 30px;
+    justify-content: center;
+
+}
+
+.projects .card {
+    height: 40vh;
+    position: relative;
+    width: 30vw;
+    margin-right: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+   
+
+}
+
+.projects .details {
+    opacity: 0;
+    transition: .5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFD21D;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.projects .details h1 {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.projects .details p {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+.projects .details button {
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    transition: .5s;
+}
+.projects .details button:hover{
+    background-color: #FF1D77;
+}
+ /* .projects .project{
+    position: relative;
+}  */
+.card img {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    transform: translate(-50%-50%);
+    width: 15vw;
+    transition: .5s;
+}
+
+#adventure {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../Images/advenweb.png) no-repeat center;
+    background-size: cover;
+}
+
+#cgraphy {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../Images/cgraphy.png) no-repeat center;
+    background-size: cover;
+}
+
+#gvo {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../Images/web2.png) no-repeat center;
+    background-size: cover;
+}
+
+#gvo img {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    transform: translate(-50%-50%);
+   
+}
+
+#katana {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../Images/katana2.png) no-repeat center;
+    background-size: cover;
+}
+
+#shop {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../Images/Web\ 1920\ –\ 2.png) no-repeat center;
+    background-size: cover;
+}
+
+.card:hover img {
+    opacity: 0;
+}
+
+.card:hover .details {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#up {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 30px;
+    bottom: 30px;
+    margin-top: 30px;
+    border: 2px solid black;
+    background-color: transparent;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: #000000 2px 2px, #7F1DFF 4px 4px;
+    transition: .5s;
+
+}
+
+
+#up:hover {
+    box-shadow: none;
+    background-color: #FF1D77;
+    transform: translateX(3px) translateY(3px);
+
+}
+
+/*--------------------------------------------------------WORK-----------------------------------------------------*/
+
+
+.mousePointer {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    position: fixed;
+    border: 1.5px dashed rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: .2s;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    #contact {
+
+        font-size: 1.5em;
+
+    }
+
+}
+
+@media only screen and (max-width: 912px) {
+
+    /* .workin{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .card .num {
+       
+    
+        -webkit-text-stroke-width: 2px;
+       
+    }
+    .card {
+      
+        height: 35vh;
+        margin-top: 10px;
+        
+    } */
+    .projects .proin {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 30px;
+        justify-content: center;
+    }
+
+    .projects .card {
+        width: 80vw;
+        margin-right: 0px;
+    }
+
+    .projects .title h1 {
+      
+        font-size: 8vw;
+        text-align: center;
+    }
+   
+    .card img {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        transform: translate(-50%-50%);
+        width:40vw;
+    }
+
+    .mousePointer {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    #head h1 {
+
+        font-size: 4em;
+
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    #head h1 {
+
+        font-size: 3em;
+
+    }
+
+    /* .card .num {
+       
+    
+        -webkit-text-stroke-width: 1px;
+       
+    }
+    .card {
+      
+        height: 30vh;
+       
+    
+    } */
+    .sign img {
+        width: 25px;
+    }
+
+    #bars .line1,
+    .line2,
+    .line3 {
+        margin-top: 3px;
+
+        width: 25px;
+        height: 3px;
+
+        border-radius: 5px;
+    }
+
+    /* .card .project .details {
+        width: 70%;
+        background-color: #FFD21D;
+    }
+    .card .project .details h1 {
+       font-size: 3vw;
+    }
+    
+    .card .project .details p {
+        font-size: 2vw;
+    }
+    .card .project .details ul{
+        font-size: 2vw;
+        margin-top: 5px;
+    }
+    .card .project .details ul li{
+        border: 1px solid black;
+        padding:2px 3px;
+    }
+    .card .project .details .center button{
+        padding: 1px 3px;
+        font-size: 2vw;
+        margin-top: 10px;
+        width: 50px;
+    } */
+}
